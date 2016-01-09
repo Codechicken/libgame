@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;codechicken.libgame.network&apos; to &apos;codechicken.libgame.io&apos;&#x0D;&#x0A;- Original project: &apos;libgame&apos;&#x0D;&#x0A;- Original element: &apos;libgame/src/codechicken.libgame.network&apos;&#x0D;&#x0A;- Renamed element: &apos;libgame/src/codechicken.libgame.io&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;codechicken.libgame.network&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;codechicken.libgame.network" name="codechicken.libgame.io" qualified="false" references="true" stamp="1449606016425" textual="false" version="1.0"/>
+</session>

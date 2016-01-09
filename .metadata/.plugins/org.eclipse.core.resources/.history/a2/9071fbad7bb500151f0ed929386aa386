@@ -1,0 +1,5 @@
+package codechicken.libgame;
+
+public class SerialException extends RuntimeException {
+
+}

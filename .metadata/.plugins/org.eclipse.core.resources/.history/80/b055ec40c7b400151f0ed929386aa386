@@ -1,0 +1,31 @@
+package codechicken.libgame;
+
+public interface Serial<T> {
+	T load(String in);
+
+	String put(T ob);
+/*
+ * R:Reference
+ * Y:Byte
+ * C:Char
+ * S:Short
+ * {Y:Begin array
+ * }Y:End array
+ * B:Boolean
+ * I:Int
+ * L:Long
+ * F:Float
+ * D:Double
+ */
+	static <U extends Serial<U>> String putObject(U ob) {
+		return "R" + ob.getClass().getName() + ob.put(ob);
+	}
+
+	static <U extends Serial<U>> String beginNarray(byte dim, Class<U> ob) {
+		return "R" + ob.getName().replaceAll("\\[\\]", "") + "{Y" + Integer.toHexString(dim);
+	}
+
+	static<U extends Serial<U>> String endNarray(byte dim){
+	return "}Y"+Integer.toHexString(dim);
+	}
+}
