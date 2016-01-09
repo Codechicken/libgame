@@ -85,11 +85,7 @@ public interface Serial<T> {
 	}
 
 	static byte readNarray(String in) {
-		if (in.startsWith("{Y", 0))
-			return (byte) Integer.parseInt(in.substring(2), 16);
+		if (in.startsWith("{Y", 0)) return (byte) Integer.parseInt(in.substring(2), 16);
 		throw new SerialException();
-	}
-	static byte readBeginNarray(String in ,Class<Serial<?>> cls){
-		
 	}
 }

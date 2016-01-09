@@ -16,6 +16,6 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="codechicken.libgame.Serial"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="codechicken.libgame.SerialException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="codechicken.libgame.SerialException"/>
 </qualifiedTypeNameHistroy>

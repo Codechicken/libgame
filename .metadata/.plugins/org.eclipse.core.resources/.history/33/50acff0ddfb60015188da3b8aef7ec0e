@@ -64,7 +64,7 @@ public interface Serial<T> {
 
 	static <U extends Serial<U>> U loadObject(String in, Class<U> cls) {
 		if (in.charAt(0) != 'R')
-			throw new SerialException();
+			return null;
 		in = in.substring(1);
 		StringBuilder tmp = new StringBuilder();
 		for (int i = 0;; i++) {
@@ -81,15 +81,10 @@ public interface Serial<T> {
 
 			}
 		}
-		throw new SerialException();
+		return null;
 	}
-
-	static byte readNarray(String in) {
-		if (in.startsWith("{Y", 0))
-			return (byte) Integer.parseInt(in.substring(2), 16);
-		throw new SerialException();
-	}
-	static byte readBeginNarray(String in ,Class<Serial<?>> cls){
+	static<U extends Serial<U>> byte readNarray(String in){
+		return (byte) Integer.parseInt(in.substring(2), 16);
 		
 	}
 }
