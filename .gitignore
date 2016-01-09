@@ -1,0 +1,5 @@
+.metadata/.log
+*.png
+.metadata/.log
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/write.lock
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
