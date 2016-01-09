@@ -1,1 +1,3 @@
 *.class
+.metadata/.log
+.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/*.*
